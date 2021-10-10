@@ -6,7 +6,7 @@ namespace SnakeLadderProblems
     {
 
         // create method to roll the die
-         void Roll()
+         public void Roll()
         {
            // create object using Random Predefined Class
             Random die = new Random();
@@ -17,6 +17,8 @@ namespace SnakeLadderProblems
             Console.WriteLine("Die show the Number: " + getNum);
 
         }
+
+
         public static void Main(string[] args)
         {
         SnakeLadderGame snakeLadder = new SnakeLadderGame();
