@@ -25,13 +25,12 @@ namespace SnakeLadderProblems
             totalNum = totalNum + getNum;
             Console.WriteLine("Current Position is: " + totalNum);
 
-            //if else programming construct
+            //if else if programming construct
             if (totalNum > WON)
             {
                 totalNum = totalNum - getNum;
                 Console.WriteLine("Current Position is: " + totalNum);
                 SnakeLadderGame.Roll();
-
             }
             else if (totalNum == WON)
             {
@@ -41,9 +40,9 @@ namespace SnakeLadderProblems
             else if (totalNum <= WON)
             {
 
-
                 switch (totalNum)
                 {
+                    //ladder and Snake are added
                     case 20:
                         Console.WriteLine("Ladder");
                         totalNum += 10;
@@ -98,7 +97,8 @@ namespace SnakeLadderProblems
         public static void Main(string[] args)
         {
             Console.WriteLine("Start Position is {0}",START_POSITION );
-           
+
+           //while loop programming construct 
             while(totalNum != WON )
             {
                 //call static method
