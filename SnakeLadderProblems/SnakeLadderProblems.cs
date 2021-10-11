@@ -10,6 +10,7 @@ namespace SnakeLadderProblems
 
         //static variable
         static int totalNum = 0;
+        static int count = 0;
 
         // create method to roll the die
         static void Roll()
@@ -18,6 +19,8 @@ namespace SnakeLadderProblems
             Random die = new Random();
             // using next() method to get output 1 to 6
             int getNum = die.Next(1, 7);
+            //to count how many time die roll
+            count++;
 
             //player roll the die and get no between 1 to 6
              Console.WriteLine("Die show the Number: " + getNum);
@@ -104,7 +107,7 @@ namespace SnakeLadderProblems
                 //call static method
                 SnakeLadderGame.Roll();
             }
-           
+            Console.WriteLine("Die roll {0} time to get the win position", count);
         }
     }
 }
